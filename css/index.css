@@ -1,0 +1,130 @@
+/* index.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/shutterstock_2196939705.jpg'); 
+    background-size: cover;
+    background-position: fixed; 
+    background-repeat: no-repeat; 
+    color: #fff; 
+}
+.container {
+    width: 40%;
+    max-width: 1000px;
+    margin: 50px auto; 
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 40px;
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    margin-left: 45%;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px; 
+    text-transform: uppercase; 
+    letter-spacing: 3px;
+    border-bottom: 2px solid #ff4081; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaçamento interno */
+}
+
+form {
+    margin-top: 20px; /* Espaçamento acima do formulário */
+}
+
+form input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    max-width: 300px;
+    border-radius: 5px; /* Bordas arredondadas */
+    border: 1px solid #fff; /* Borda branca */
+    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
+    color: #fff; /* Cor do texto */
+}
+
+form button {
+    padding: 10px 20px; /* Padding interno */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer */
+    transition: background 0.3s; /* Transição suave para o botão */
+}
+
+form button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}
+
+ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco semi-transparente */
+    margin: 15px 0; /* Margem entre os itens */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex; /* Exibir como flexbox */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: space-between; /* Justificar espaço entre itens */
+    transition: background 0.3s; /* Transição suave ao passar o mouse */
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Efeito de hover */
+}
+
+ul li img {
+    margin-right: 15px; /* Espaçamento à direita da imagem */
+    width: 50px; /* Tamanho fixo para as imagens */
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra das imagens */
+}
+
+button[type="submit"] {
+    margin-left: auto; /* Alinhar botão à direita */
+    padding: 10px 15px; /* Padding interno do botão */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer */
+    transition: background 0.3s; /* Transição suave para o botão */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Reduzir o tamanho do título em telas pequenas */
+    }
+
+    .container {
+        padding: 20px; /* Reduzir o padding em telas pequenas */
+    }
+
+    form input[type="text"] {
+        width: 80%; /* Aumentar a largura do campo de pesquisa em telas pequenas */
+    }
+}
+button {
+    margin-top: 20px; /* Espaçamento acima do botão */
+    padding: 10px 20px; /* Padding interno */
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer */
+    transition: background 0.3s; /* Transição suave para o botão */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+}

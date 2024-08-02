@@ -1,0 +1,90 @@
+/* details.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../img/olympic-games-sports-background-with-copy-space-text.jpg'); /* Imagem de fundo */
+    background-size: cover; /* Cobrir toda a área da página */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Não repetir a imagem */
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: 35px auto; /* Margem superior para afastar do topo */
+    background: rgba(0, 0, 0, 0.8); /* Fundo preto semi-transparente */
+    padding: 40px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra do contêiner */
+    text-align: center; /* Centraliza o texto */
+}
+
+h1 {
+    font-size: 2.5em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+    text-transform: uppercase; /* Transformar o texto para maiúsculas */
+    letter-spacing: 2px; /* Espaçamento entre letras */
+    border-bottom: 2px solid #fff; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaçamento interno */
+}
+
+ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o padding */
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco semi-transparente */
+    margin: 10px 0; /* Margem entre os itens */
+    padding: 15px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    display: flex; /* Exibir como flexbox */
+    align-items: center; /* Centralizar verticalmente */
+    transition: background 0.3s; /* Transição suave ao passar o mouse */
+}
+
+ul li:hover {
+    background: rgba(255, 255, 255, 0.2); /* Efeito de hover */
+}
+
+ul li img {
+    margin-right: 15px; /* Espaçamento à direita da imagem */
+    width: 40px; /* Tamanho fixo para as imagens */
+}
+
+a {
+    display: inline-block; /* Exibir como bloco inline */
+    margin-top: 20px; /* Margem superior */
+    padding: 10px 20px; /* Padding interno */
+    background-color: #ff4081; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background 0.3s; /* Transição suave para o botão */
+}
+
+a:hover {
+    background-color: #e91e63; /* Cor de fundo ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Reduzir o tamanho do título em telas pequenas */
+    }
+
+    .container {
+        padding: 20px; /* Reduzir o padding em telas pequenas */
+    }
+
+    ul li {
+        flex-direction: column; /* Colocar a imagem acima do texto em telas pequenas */
+        align-items: flex-start; /* Alinhar itens à esquerda */
+    }
+
+    ul li img {
+        margin-bottom: 10px; /* Espaçamento abaixo da imagem */
+    }
+}
