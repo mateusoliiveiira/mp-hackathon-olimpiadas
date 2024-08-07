@@ -1,17 +1,146 @@
-header{
-    background-color: #9b9b9b;
+/* index.css */
+
+header {
+    background: linear-gradient(135deg, #000000, #474747);
     width: 100%;
     margin-top: -10px;
-    height: 50px;
-   
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
 }
-main{
-    background-color: black;
-    width: 100%;
-    height: 580px;
+
+header h1 {
+    font-family: 'Georgia', serif;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem; /* Tamanho da fonte reduzido para 1.5rem */
+    letter-spacing: 2px;
 }
-footer{
-    background-color: #9b9b9b;
+
+main {
+    background-color: #121212;
     width: 100%;
-    height: 100px;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 10px solid #a2db08; /* Bordas decorativas */
+}
+
+footer {
+    background: linear-gradient(180deg, #a2db08, #f7d94e);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.marque {
+    margin-top: 0px;
+    font-family: 'Georgia', serif;
+    font-size: 0.2rem; 
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+    border: 2px solid  #f7d94e; 
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+#marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 10s linear infinite; 
+    font-size: 3rem;
+    color: #a2db08; 
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.table-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 90%; /* Torna a largura relativa */
+    max-width: 300px; /* Limita a largura máxima */
+}
+
+/* Media Queries para ajustes em telas menores */
+@media (max-width: 768px) {
+    .table-container {
+        right: 2%; /* Ajusta a posição à direita em telas menores */
+        width: 95%; /* Aumenta a largura para se ajustar melhor */
+        left: 40px;
+    }
+}
+
+
+.styled-table {
+    border-collapse: collapse;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    overflow: hidden; 
+    background-color: #1a1a1a; 
+}
+
+.styled-table thead {
+    background-color: #a2db08; 
+    color: #fff; 
+}
+
+.styled-table th {
+    padding: 15px; 
+    text-align: left; 
+}
+
+.styled-table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #c0f236;
+}
+
+.styled-table td {
+    padding: 10px; 
+    text-align: center; 
+}
+
+.btn {
+    display: inline-block;
+    background-color: #a2db08; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #688811; 
+}
+.logo {
+    margin-left: -900px;
+}
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 0; /* Remove margem esquerda em telas menores */
+        margin-right: 0; /* Remove margem direita em telas menores */
+        width: 30%; /* Define uma largura proporcional em telas pequenas */
+        margin-top: -400px;
+    }
 }

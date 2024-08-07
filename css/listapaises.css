@@ -1,17 +1,20 @@
-/* index.css */
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-   background-color: rgb(49, 49, 49);
+    background-image: url('../img/shutterstock_2196939705.jpg');
     background-size: cover;
-    background-position: fixed; 
+    background-position: center;
     background-repeat: no-repeat; 
     color: #fff; 
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Alinha verticalmente */
+    height: 100vh; /* Ocupa a altura total da tela */
 }
+
 .container {
-    width: 40%;
+    width: 90%;
     max-width: 1000px;
     margin: 50px auto; 
     background: rgba(0, 0, 0, 0.7); 
@@ -19,7 +22,6 @@ body {
     border-radius: 15px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
     text-align: center;
-    margin-left: 45%;
 }
 
 h1 {
@@ -27,104 +29,154 @@ h1 {
     margin-bottom: 30px; 
     text-transform: uppercase; 
     letter-spacing: 3px;
-    border-bottom: 2px solid #ff4081; /* Linha abaixo do título */
-    padding-bottom: 10px; /* Espaçamento interno */
+    border-bottom: 2px solid #ff4081; 
+    padding-bottom: 10px; 
 }
 
 form {
-    margin-top: 20px; /* Espaçamento acima do formulário */
+    margin-top: 20px;
 }
 
 form input[type="text"] {
     padding: 10px;
-    width: 60%;
+    width: 80%;
     max-width: 300px;
-    border-radius: 5px; /* Bordas arredondadas */
-    border: 1px solid #fff; /* Borda branca */
-    background: rgba(255, 255, 255, 0.2); /* Fundo semi-transparente */
-    color: #fff; /* Cor do texto */
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, 0.2); 
+    color: #fff; 
+    margin: 0 auto; /* Centraliza o campo de texto */
+    display: block; /* Garante que o campo de texto ocupe toda a largura disponível */
 }
 
 form button {
-    padding: 10px 20px; /* Padding interno */
-    background-color: #4CAF50; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de pointer */
-    transition: background 0.3s; /* Transição suave para o botão */
+    padding: 10px 20px; 
+    background-color: #4CAF50; 
+    color: white; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background 0.3s; 
+    margin-top: 20px; /* Espaçamento superior para o botão */
 }
 
 form button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+    background-color: #45a049; 
 }
 
 ul {
-    list-style: none; /* Remove os marcadores da lista */
-    padding: 0; /* Remove o padding */
+    list-style: none; 
+    padding: 0; 
+    text-align: left; /* Alinha o texto à esquerda */
 }
 
 ul li {
-    background: rgba(255, 255, 255, 0.1); /* Fundo branco semi-transparente */
-    margin: 15px 0; /* Margem entre os itens */
-    padding: 20px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    display: flex; /* Exibir como flexbox */
-    align-items: center; /* Centralizar verticalmente */
-    justify-content: space-between; /* Justificar espaço entre itens */
-    transition: background 0.3s; /* Transição suave ao passar o mouse */
+    background: rgba(255, 255, 255, 0.1); 
+    margin: 15px 0; 
+    padding: 20px;
+    border-radius: 10px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    transition: background 0.3s; 
 }
 
 ul li:hover {
-    background: rgba(255, 255, 255, 0.2); /* Efeito de hover */
+    background: rgba(255, 255, 255, 0.2);
 }
 
 ul li img {
-    margin-right: 15px; /* Espaçamento à direita da imagem */
-    width: 50px; /* Tamanho fixo para as imagens */
-    border-radius: 5px; /* Bordas arredondadas nas imagens */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Sombra das imagens */
+    margin-right: 15px; 
+    width: 50px;
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
 }
 
 button[type="submit"] {
-    margin-left: auto; /* Alinhar botão à direita */
-    padding: 10px 15px; /* Padding interno do botão */
-    background-color: #007bff; /* Cor de fundo do botão */
-    color: #fff; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de pointer */
-    transition: background 0.3s; /* Transição suave para o botão */
+    margin-left: auto;
+    padding: 10px 15px; 
+    background-color: #a2db08; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background 0.3s;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+    background-color: #034a0d; 
 }
 
 @media (max-width: 600px) {
     h1 {
-        font-size: 2em; /* Reduzir o tamanho do título em telas pequenas */
+        font-size: 2em; 
     }
 
     .container {
-        padding: 20px; /* Reduzir o padding em telas pequenas */
+        padding: 20px; 
     }
 
     form input[type="text"] {
-        width: 80%; /* Aumentar a largura do campo de pesquisa em telas pequenas */
+        width: 90%; 
+    }
+    
+    .volt {
+        font-size: 16px; 
     }
 }
-button {
-    margin-top: 20px; /* Espaçamento acima do botão */
-    padding: 10px 20px; /* Padding interno */
-    background-color: #4CAF50; /* Cor de fundo do botão */
-    color: white; /* Cor do texto */
-    border: none; /* Sem borda */
-    border-radius: 5px; /* Bordas arredondadas */
-    cursor: pointer; /* Cursor de pointer */
-    transition: background 0.3s; /* Transição suave para o botão */
+
+.scrollable-list {
+    max-height: 350px; 
+    overflow-y: auto;
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin-top: 10px; 
 }
 
-button:hover {
-    background-color: #45a049; /* Cor de fundo ao passar o mouse */
+.logo {
+    margin-top: 20px;
+}
+
+.volt {
+    display: inline-block; 
+    padding: 10px 20px;
+    background-color: #4CAF50; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none;
+    border-radius: 25px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 30px;
+}
+
+.volt:hover {
+    background-color: #45a049; 
+    transform: scale(1.05);
+}
+
+.volt:active {
+    transform: scale(0.95);
+}
+
+/* Estilos adicionais para melhorar a responsividade */
+@media (max-width: 768px) {
+    .container {
+        margin: 20px; /* Reduzir margem em telas menores */
+    }
+
+    form input[type="text"], form button {
+        width: 100%; /* Ocupando toda a largura disponível */
+        max-width: none; /* Remover limite de largura */
+    }
+
+    ul li {
+        flex-direction: column; /* Alterar direção dos itens da lista */
+        align-items: flex-start; /* Alinhar à esquerda */
+    }
+
+    ul li img {
+        width: 40px; /* Diminuir tamanho da imagem */
+    }
 }

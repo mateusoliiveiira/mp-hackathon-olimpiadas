@@ -1,0 +1,265 @@
+/* index.css */
+
+header {
+    background: linear-gradient(135deg, #000000, #474747);
+    width: 100%;
+    margin-top: -10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+main {
+    background-color: #121212;
+    width: 100%;
+    height: auto; /* Alterado para auto para se ajustar ao conteúdo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    border-top: 10px solid #a2db08;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem em várias linhas */
+    justify-content: center; /* Centraliza os cartões */
+}
+
+.card {
+    background-color: #3ca200;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    margin: 10px; /* Espaçamento entre os cartões */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+    width: 200px; /* Define uma largura fixa para os cartões */
+}
+
+.card img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do cartão */
+    border-radius: 10px;
+}
+
+footer {
+    background: linear-gradient(180deg, #a2db08, #f7d94e);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.marque {
+    margin-top: 0px;
+    font-family: 'Georgia', serif;
+    font-size: 0.2rem; 
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+    border: 2px solid  #f7d94e; 
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+#marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 10s linear infinite; 
+    font-size: 3rem;
+    color: #a2db08; 
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.table-container {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    width: 90%;
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        right: 2%; 
+        width: 95%; 
+        left: 40px;
+    }
+}
+
+.styled-table {
+    border-collapse: collapse;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    overflow: hidden; 
+    background-color: #1a1a1a; 
+}
+
+.styled-table thead {
+    background-color: #a2db08; 
+    color: #fff; 
+}
+
+.styled-table th {
+    padding: 15px; 
+    text-align: left; 
+}
+
+.styled-table tbody tr {
+    transition: background-color 0.3s;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #c0f236;
+}
+
+.styled-table td {
+    padding: 10px; 
+    text-align: center; 
+}
+
+.btn {
+    display: inline-block;
+    background-color: #a2db08; 
+    color: white; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.btn:hover {
+    background-color: #688811; 
+}
+
+.logo {
+    margin-left: -900px;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 0; 
+        margin-right: 0; 
+        width: 30%; 
+        margin-top: -400px;
+    }
+}
+header {
+    background: linear-gradient(135deg, #000000, #474747);
+    width: 100%;
+    margin-top: -10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Georgia', serif;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    font-size: 1.5rem; /* Tamanho da fonte reduzido para 1.5rem */
+    letter-spacing: 2px;
+}
+
+.marque {
+    margin-top: 0px;
+    font-family: 'Georgia', serif;
+    font-size: 0.2rem; 
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    padding: 10px; 
+    border: 2px solid  #f7d94e; 
+    border-radius: 10px; 
+    background: rgba(255, 255, 255, 0.1); 
+}
+
+#marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 10s linear infinite; 
+    font-size: 3rem;
+    color: #a2db08; 
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+    font-size: 30px;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}.volt {
+    display: inline-block;
+    padding: 10px 20px; 
+    background: linear-gradient(135deg, #a2db08, #688811); 
+    color: white; 
+    font-size: 1.2rem;
+    font-family: 'Georgia', serif; 
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+    margin-top: 20px; 
+    text-decoration: none;
+}
+
+.volt:hover {
+    background: linear-gradient(135deg, #688811, #a2db08); 
+    transform: translateY(-3px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6); 
+}@media (max-width: 768px) {
+    header {
+        height: 60px; /* Reduzir a altura do cabeçalho em telas menores */
+    }
+
+    header h1 {
+        font-size: 1.2rem; /* Reduzir o tamanho da fonte do título em telas menores */
+    }
+
+    main {
+        height: auto; /* Permitir que o main se ajuste ao conteúdo em telas menores */
+        padding: 20px; /* Adicionar um pouco de preenchimento ao redor */
+    }
+
+    .table-container {
+        right: 2%; /* Ajustar a posição à direita em telas menores */
+        width: 95%; /* Aumentar a largura para se ajustar melhor */
+        left: 0; /* Remover a margem esquerda */
+        position: relative; /* Alterar para relativo */
+    }
+
+    .styled-table {
+        width: 100%; /* Tornar a tabela responsiva */
+        max-width: none; /* Remover a largura máxima */
+    }
+
+    .volt {
+        width: 100%; /* Botão "Voltar" ocupa 100% da largura */
+        text-align: center; /* Centralizar texto no botão */
+        margin-top: 20px; /* Manter a margem superior */
+       margin-left: -12px;
+    }
+
+   
+}
