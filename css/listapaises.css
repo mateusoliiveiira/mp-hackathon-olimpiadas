@@ -4,7 +4,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../img/shutterstock_2196939705.jpg'); 
+   background-color: rgb(49, 49, 49);
     background-size: cover;
     background-position: fixed; 
     background-repeat: no-repeat; 

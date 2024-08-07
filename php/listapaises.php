@@ -37,37 +37,16 @@ if (isset($_GET['search'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Países Olímpicos</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <script>
-        function toggleCountrySection() {
-            const countrySection = document.getElementById('country-section');
-            const showButton = document.getElementById('show-button');
-            const hideButton = document.getElementById('hide-button');
-            if (countrySection.style.display === 'none' || countrySection.style.display === '') {
-                countrySection.style.display = 'block';
-                showButton.style.display = 'none'; // Esconde o botão de mostrar
-                hideButton.style.display = 'inline'; // Mostra o botão de esconder
-            }
-        }
-
-        function hideCountrySection() {
-            const countrySection = document.getElementById('country-section');
-            const showButton = document.getElementById('show-button');
-            const hideButton = document.getElementById('hide-button');
-            countrySection.style.display = 'none';
-            showButton.style.display = 'inline'; // Mostra o botão de mostrar
-            hideButton.style.display = 'none'; // Esconde o botão de esconder
-        }
-
-        
-    </script>
+    <link rel="stylesheet" href="../css/listapaises.css">
+    
 </head>
 <body>
+
     <div class="container">
+  
         <h1>Lista de Países Olímpicos</h1>
-        <button id="show-button" onclick="toggleCountrySection()">Mostrar Países</button>
-        <button id="hide-button" onclick="hideCountrySection()" style="display: none;">Esconder Países</button>
-        <div id="country-section" style="display: none;">
+     
+        
             <form onsubmit="searchCountries(event)">
                 <input type="text" id="search-input" name="search" placeholder="Pesquisar país" value="<?php echo htmlspecialchars($searchQuery); ?>">
                 <button type="submit">Pesquisar</button>
@@ -99,5 +78,6 @@ if (isset($_GET['search'])) {
             </ul>
         </div>
     </div>
+    <img class="2024" src="../img/paris-2024-olympic-game-official-logo-white-symbol-vector-46731615-removebg-preview.png  ">
 </body>
 </html>

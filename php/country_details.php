@@ -21,6 +21,8 @@ if (isset($_GET['id'], $_GET['name'], $_GET['gold_medals'], $_GET['silver_medals
     <link rel="stylesheet" href="../css/details.css">
 </head>
 <body>
+
+
     <div class="container">
         <h1>Medalhas de <?php echo $name; ?></h1>
         <ul>
@@ -29,7 +31,7 @@ if (isset($_GET['id'], $_GET['name'], $_GET['gold_medals'], $_GET['silver_medals
             <li><img src="../img/medalhadebronze.jpg"width="10px" margin-top="10px">Bronze: <?php echo $bronze_medals; ?></li>
             <li>Total: <?php echo $total_medals; ?></li>
         </ul>
-        <a href="index.php">Voltar à Lista de Países</a>
+        <a href="listapaises.php">Voltar à Lista de Países</a>
     </div>
 </body>
 </html>
